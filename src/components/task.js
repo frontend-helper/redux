@@ -9,7 +9,9 @@ function Task(props) {
     props.editTask(task);
   };
   const deleteTask = async (id) => {
-    dispatch(remove(id));
+    if (window.confirm("Are you sure ?")) {
+      dispatch(remove(id));
+    }
   };
 
   return (
