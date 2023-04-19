@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-bottom: 0.2rem;
+  border: 1px solid #cfcece;
+}
+
+.btn-container button {
+  margin-right: 0.5rem;
+}
+
+.btn-container button:last-of-type {
+  margin-right: 0;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+.form-container {
+  position: absolute;
+  background: #fff;
+  border-radius: 5px;
+  left: 50%;
+  top: 50%;
+  text-align: left;
+  padding: 1rem;
+  width: 300px;
+  height: 150px;
+  margin: -75px 0 0 -150px;
+}
+
+.form-container h3 {
+  margin-top: 0;
+}
+.form-container label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-container input {
+  padding: 5px;
+  width: 100%;
+  border-color: #ccc;
+  outline: none !important;
+  margin-bottom: 0.5rem;
+  box-shadow: none;
+}
