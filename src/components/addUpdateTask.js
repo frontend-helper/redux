@@ -7,7 +7,7 @@ function AddUpdateTask(props) {
   const dispatch = useDispatch();
   useEffect(() => {
     if (props.task) setTitle(props.task.title);
-  }, []);
+  }, [props]);
 
   const save = () => {
     if (props.task) {
